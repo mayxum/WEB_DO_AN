@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const router = require('./app/routes/home.route')
+const homeRouter = require('./app/routes/home.route')
 const ErrorAPI =  require('./app/ErrorAPI')
 
 const app = express()
@@ -24,6 +24,7 @@ app.use((err , req ,res , next ) => {
         })
 })
 
-app.use("/api" , router)
+app.use("/api" , homeRouter)
+// app.use("")
 
 module.exports = app

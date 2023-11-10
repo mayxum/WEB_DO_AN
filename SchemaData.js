@@ -50,7 +50,7 @@ const giohang =
     "_id"       : "int" ,
     "UID"       : "int" ,
     "prdId"     :["SP1" , "Sp2" ] ,
-    "quantity"  :[1     ,   3   ] ,
+    "quantity"  :[  1   ,   3   ] ,
 }
 
 const roleInput = 
@@ -114,7 +114,7 @@ const accountInput =
         "_id": 5,
         "username": "lpthinh",
         "password": "123",
-        "name": "Lê Sỹ Anh Tấn",
+        "name": "Lê Phu THinh",
         "address": "Hé lô",
         "email": "user@gmail.com",
         "phone": "1000",  
@@ -122,7 +122,7 @@ const accountInput =
     },
     {
         "_id": 6,
-        "username": "phpcraft",
+        "username": "php",
         "password": "123",
         "name": "Phạm Hoàng Phong",
         "address": "Hé lô",
@@ -145,19 +145,19 @@ const sanphamInput =
 [
     {
         "_id"           : 1 ,
-        "productName"   : "Nồi",
-        "type"          : "Nhà Bếp" ,   
-        "description"   : "Nồi Siêu Bền",
-        "price"         : 50000,
-        "quantity"      : 5000,
+        "productName"   : "Iphone 16",
+        "type"          : "Điện thoại" ,   
+        "description"   : "Điện thoại hàng đầu từ Apple",
+        "price"         : 30000000,
+        "quantity"      : 500,
         "PrdImage"      : "image"
     },
     {
         "_id"           : 2 ,
-        "productName"   : "Chảo",
-        "type"          : "Nhà Bếp" ,   
-        "description"   : "Chảo Siêu Siêu Bền",
-        "price"         : 50000,
+        "productName"   : "Dell XPS 13 9300",
+        "type"          : "Laptop" ,   
+        "description"   : "Laptop siêu mỏng nhẹ",
+        "price"         : 23000000,
         "quantity"      : 5000,
         "PrdImage"      : "image"
     }
