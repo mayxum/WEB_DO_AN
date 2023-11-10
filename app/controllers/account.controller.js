@@ -60,4 +60,28 @@ exports.findAccountbyId = async (req, res, next) => {
   }
 }
 
+module.exports.login = async (req,res,next) => {
+  try {
+    const Service = new MongoService()
+    const account = Service.account
+    const username = req.body.username
+    // console.log(username)
+    const result = await account.findOne({username: username })
+    if (!result) 
+        return res.json({isAvailable : false})
+    else if (result.password !== req.body.password)
+        return res.json({
+            isAvailable : true , 
+            isTruePassword : false
+        })
+    return res.json({
+        isAvailable     : true , 
+        isTruePassword  : true ,
+        infomation      : result
+    })
+} catch (error) {
+    return next(new ErrorAPI('500' , 'Has Error When Valid Username'))
+}
+}
+
 

@@ -9,4 +9,7 @@ router.route("/:id")
   .put(controller.updateAccount)
   .get(controller.findAccountbyId);
 
+router.route("/login")
+  .post(controller.login)
+
 module.exports = router;
