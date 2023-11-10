@@ -1,8 +1,6 @@
 const router = require('express').Router()
-const home = require('../controllers/home.controller')
+const home = require('../controllers/account.controller')
 
-router.route('/home')
-    .get(home.login)
-
+router.route()
 
 module.exports = router
