@@ -17,3 +17,7 @@ exports.findProductbyId = async (req, res, next) => {
 exports.findProductbyType = async (req, res, next) => {
   res.json({ message: "Find product by type successfully" });
 };
+
+exports.findProductByName = async (req, res, next) => {
+  res.json({ message: "Find product by Name successfully" });
+};
