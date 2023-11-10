@@ -211,6 +211,7 @@ const BangTruyVan =
 ]
 
 module.exports = {
+    role    : roleInput ,
     account : accountInput ,
     sanpham : sanphamInput ,
     hoadon  : hoadonInput  ,
