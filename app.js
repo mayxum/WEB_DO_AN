@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const Account = require('./app/routes/account.route')
 const Product = require('./app/routes/product.route')
+const Bill = require('./app/routes/bill.route')
 const ErrorAPI =  require('./app/ErrorAPI')
 
 const app = express()
@@ -11,6 +12,7 @@ app.use(express.json())
 
 app.use('/api/account', Account)
 app.use('/api/product', Product)
+app.use('/api/bill', Bill)
 
 //Catch Not Found
 app.use((req,res,next)=>{
