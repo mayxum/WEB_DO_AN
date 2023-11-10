@@ -8,5 +8,8 @@ router.route("/:id")
     .get(controller.findBillbyId)
     .put(controller.updateBill)
     .delete(controller.cancelBill)
+
+router.route("/status/:id")
+    .get(controller.nextStatus)
     
 module.exports = router;
