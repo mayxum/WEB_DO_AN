@@ -10,9 +10,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get("",(req,res)=>{
-    res.json({message : "Welcome To My Shop "})
-})
+app.use('/api/cart', cartRouter)
 
 //Catch Not Found
 app.use((req,res,next)=>{
