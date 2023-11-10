@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
-const router = require('./app/routes/home.route')
+const Account = require('./app/routes/account.route')
+const Product = require('./app/routes/product.route')
 const ErrorAPI =  require('./app/ErrorAPI')
 
 const app = express()
@@ -8,9 +9,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get("",(req,res)=>{
-    res.json({message : "Welcome To My Shop "})
-})
+app.use('/api/account', Account)
+app.use('/api/product', Product)
 
 //Catch Not Found
 app.use((req,res,next)=>{
@@ -24,6 +24,5 @@ app.use((err , req ,res , next ) => {
         })
 })
 
-app.use("/api" , router)
 
 module.exports = app
