@@ -38,6 +38,7 @@ async function InitServer()
         await collection.hoadon.insertMany(InitData.hoadon)
         await collection.giohang.insertMany(InitData.giohang)
         await collection.truyvan.insertMany(InitData.truyvan)
+        await collection.chitiet.insertMany(InitData.chitiet)
        
     } catch (error) {
         console.log("Error When Init With MongoDB" , error)

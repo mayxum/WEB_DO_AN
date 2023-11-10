@@ -176,7 +176,7 @@ const hoadonInput =
 //  Các Trạng Thái Ứng với Các Số 
 //  Đã Huỷ          -> 0
 //  Đã Đặt Hàng     -> 1
-//  Đã Xác Xác Nhận -> 2
+//  Đã Xác Nhận     -> 2
 //  Đang Giao Hàng  -> 3
 //  Đã Thanh Toán   -> 4
 const chitietInput = 

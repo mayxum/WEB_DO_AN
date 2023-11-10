@@ -3,6 +3,7 @@ const cors = require('cors')
 const Account = require('./app/routes/account.route')
 const Product = require('./app/routes/product.route')
 const Bill = require('./app/routes/bill.route')
+const BillDetail = require('./app/routes/billdetail.route')
 const cartRouter = require('./app/routes/cart.route')
 const ErrorAPI =  require('./app/ErrorAPI')
 
@@ -13,6 +14,7 @@ app.use(express.json())
 
 app.use('/api/account', Account)
 app.use('/api/bill', Bill)
+app.use('/api/detail', BillDetail)
 app.use('/api/product', Product)
 app.use('/api/cart', cartRouter)
 

@@ -5,10 +5,12 @@ exports.createAccount = async (req, res, next) => {
   try {
     const Service = new MongoService()
     const account = Service.account
+    const giohang    = Service.giohang
     const truyvan = Service.truyvan
-    const index   = await truyvan.findOneAndUpdate({} , {$inc : {account : 1}})
+    const index   = await truyvan.findOneAndUpdate({} , {$inc : {account : 1 , giohang : 1}})
     // console.log(index.account)
     const result  = await account.insertOne({"_id" : index.account , ...req.body})
+    await giohang.insertOne({"_id" : index.giohang ,UID : index.account , prdId : [] , quantity : [] })
     if(result.acknowledged)
       return res.json({message : "Tạo Tài Khoản Thành Công"})
     

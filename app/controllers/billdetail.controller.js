@@ -1,11 +1,16 @@
-exports.creatBillDetail = async (req, res, next) => {
-  res.json({ message: "Creat bill detail successfully" });
-};
+const MongoService = require('../services/mongo.service')
+const ErrorAPI  = require('../ErrorAPI');
 
-exports.findBillDetail = async (req, res, next) => {
-  res.json({ message: "Find bill detail successfully" });
-};
-
-exports.deleteBillDetail = async (req, res, next) => {
-  res.json({ message: "Delete bill detail successfully" });
+exports.updateDetailBill = async (req, res, next) => {
+  try {
+    const Service = new MongoService()
+    const chitiet = Service.chitiet
+    const result  = await chitiet.findOneAndUpdate({"billNumber" : req.params.id*1} , {$set : req.body})
+    if(result)
+      return res.json({message : "Chi Tiết Hoá Đơn Thành Công"})
+    return res.json({message : "Không Tìm Thấy Hoá Đơn"})
+  
+  } catch (error) {
+    return next(new ErrorAPI(500,"Error When Update Chi Tiết Hoá Đơn"))
+  }
 };
