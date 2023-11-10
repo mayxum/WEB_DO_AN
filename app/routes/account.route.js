@@ -1,7 +1,12 @@
-const router = require('express').Router()
-const home = require('../controllers/account.controller')
+const router = require("express").Router();
+const controller = require("../controllers/account.controller");
 
-// router.route("/")
-    // .post()
+router.route("/")
+    .post(controller.createAccount);
 
-module.exports = router
+router.route("/:id")
+  .delete(controller.deleteAccount)
+  .put(controller.updateAccount)
+  .get(controller.findAccountbyId);
+
+module.exports = router;
