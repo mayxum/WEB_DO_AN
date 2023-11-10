@@ -7,7 +7,7 @@ exports.createAccount = async (req, res, next) => {
     const account = Service.account
     const truyvan = Service.truyvan
     const index   = await truyvan.findOneAndUpdate({} , {$inc : {account : 1}})
-    console.log(index.account)
+    // console.log(index.account)
     const result  = await account.insertOne({"_id" : index.account , ...req.body})
     if(result.acknowledged)
       return res.json({message : "Tạo Tài Khoản Thành Công"})
