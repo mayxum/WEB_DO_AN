@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const homeRouter = require('./app/routes/home.route')
+const cartRouter = require('./app/routes/cart.route')
 const ErrorAPI =  require('./app/ErrorAPI')
 
 const app = express()
@@ -8,9 +8,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get("",(req,res)=>{
-    res.json({message : "Welcome To My Shop "})
-})
+app.use("/api/cart", cartRouter)
 
 //Catch Not Found
 app.use((req,res,next)=>{
@@ -24,7 +22,5 @@ app.use((err , req ,res , next ) => {
         })
 })
 
-app.use("/api" , homeRouter)
-// app.use("")
 
 module.exports = app
