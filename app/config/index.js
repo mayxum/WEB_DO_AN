@@ -10,6 +10,7 @@ module.exports = {
             role    :   "BangChucVu" ,
             account :   "BangNguoiDung" ,
             sanpham :   "ThongTinSanPham" ,
+            type    :   "LoaiSanPham" ,
             hoadon  :   "HoaDon" ,
             chitiet :   "ChiTietHoaDon" ,
             giohang :   "GioHang" ,

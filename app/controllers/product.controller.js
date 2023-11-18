@@ -86,3 +86,15 @@ exports.findProductByName = async (req, res, next) => {
     return next(new ErrorAPI(501 , "Error When Find User By productName"))
 }
 };
+
+exports.getAll = async (req,res,next) =>{
+  try {
+    const Service = new MongoService()
+    const sanpham = Service.sanpham
+    const result = await sanpham.find({}).sort({_id : -1}).toArray()
+    res.json(result)
+  } catch (error) {
+    console.log(error)
+    return next(new ErrorAPI(501 , "Error When Get All Product"))
+  }
+}

@@ -92,7 +92,7 @@ const accountInput =
     },
     {
         "_id": 3,
-        "username": "customer",
+        "username": "user",
         "password": "123",
         "name": "Khách Hàng",
         "address": "Hé lô",
@@ -145,21 +145,99 @@ const sanphamInput =
 [
     {
         "_id"           : 1 ,
-        "productName"   : "Iphone 16",
-        "type"          : "Điện thoại" ,   
-        "description"   : "Điện thoại hàng đầu từ Apple",
-        "price"         : 30000000,
-        "quantity"      : 500,
-        "PrdImage"      : "image"
+        "productName"   : "Giầy Vàng",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 12000000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes1.png"
     },
     {
         "_id"           : 2 ,
-        "productName"   : "Dell XPS 13 9300",
-        "type"          : "Laptop" ,   
-        "description"   : "Laptop siêu mỏng nhẹ",
-        "price"         : 23000000,
-        "quantity"      : 5000,
-        "PrdImage"      : "image"
+        "productName"   : "Giầy Đen",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 950000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes2.png"
+    },
+    {
+        "_id"           : 3 ,
+        "productName"   : "Giầy Xanh",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 120000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes3.png"
+    },
+    {
+        "_id"           : 4 ,
+        "productName"   : "Giầy Xanh Trắng",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 10000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes4.png"
+    },
+    {
+        "_id"           : 5 ,
+        "productName"   : "Giầy Xám",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 215000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes5.png"
+    },
+    {
+        "_id"           : 6 ,
+        "productName"   : "Giầy Cam",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 1250000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes6.png"
+    },
+    {
+        "_id"           : 7 ,
+        "productName"   : "Giầy Đỏ",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 625000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes7.png"
+    },
+    {
+        "_id"           : 8 ,
+        "productName"   : "Giầy Đen Xanh",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 125000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes8.png"
+    },
+    {
+        "_id"           : 9 ,
+        "productName"   : "Giầy Thể Thao",
+        "type"          : 1 ,   
+        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "price"         : 325000,
+        "quantity"      : 500 ,
+        "PrdImage"      : "image/shoes.png"
+    },
+]
+const TypeProductInput = 
+[
+    {
+        "_id" : 1 ,
+        "Name" : "Giầy" 
+    },
+    {
+        "_id" : 2 ,
+        "Name" : "Trái Cây" 
+    },
+    {
+        "_id" : 3 ,
+        "Name" : "Something" 
     }
 ]
 const hoadonInput = 
@@ -214,6 +292,7 @@ module.exports = {
     role    : roleInput ,
     account : accountInput ,
     sanpham : sanphamInput ,
+    type    : TypeProductInput ,
     hoadon  : hoadonInput  ,
     chitiet : chitietInput ,
     giohang : giohangInput ,
