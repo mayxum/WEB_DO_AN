@@ -1,8 +1,10 @@
-const router = require('express').Router();
-const cart = require('../controllers/cart.controller')
+const router = require("express").Router();
+const cart = require("../controllers/cart.controller");
 
-router.route('/:id')
-        .get(cart.findByUID)
-        .put(cart.updateCart)
+router
+  .route("/:uid")
+  .get(cart.findByUID)
+  .post(cart.addItem)
+  .put(cart.updateCart);
 
-module.exports = router
+module.exports = router;

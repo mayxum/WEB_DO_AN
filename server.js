@@ -8,11 +8,11 @@ async function startServer()
 {
     try {
         await Mongo.connect(config.db.url)
-        console.log("Connect To MongoDB Success");
+        console.log("Connect to MongoDB successfully");
         const Port = config.app.PORT
-        app.listen(Port , ()=>{console.log(`Now Server Run On ${Port}`);})
+        app.listen(Port , ()=>{console.log(`Server running on ${Port}`);})
     } catch (error) {
-        console.log('Connect To DB has Error', error)
+        console.log('Error connecting to MongoDB', error)
     }
 }
 
@@ -47,5 +47,5 @@ async function InitServer()
     }
 }
 
-// InitServer()
+InitServer()
 startServer()

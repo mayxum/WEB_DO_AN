@@ -29,7 +29,7 @@ const sanpham =
 
 const hoadon = 
 {
-    "_id"        : "int",
+    "_id"               : "int",
     "createDate"        : "date",
     "deliveryDate"      : "date",
     "status"            : "int",
@@ -145,125 +145,186 @@ const sanphamInput =
 [
     {
         "_id"           : 1 ,
-        "productName"   : "Giầy Vàng",
+        "productName"   : "Puma Purple T-shirt",
         "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 12000000,
+        "description"   : "Shirt",
+        "price"         : 500000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes1.png"
+        "PrdImage"      : "images/product-4.png"
     },
     {
         "_id"           : 2 ,
-        "productName"   : "Giầy Đen",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 950000,
+        "productName"   : "Black Fossil Watch",
+        "type"          : 2 ,   
+        "description"   : "Shirt",
+        "price"         : 1950000000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes2.png"
+        "PrdImage"      : "images/product-8.png"
     },
     {
         "_id"           : 3 ,
-        "productName"   : "Giầy Xanh",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 120000,
+        "productName"   : "HRX Socks",
+        "type"          : 4 ,   
+        "description"   : "Socks",
+        "price"         : 220000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes3.png"
+        "PrdImage"      : "images/product-7.png"
     },
     {
         "_id"           : 4 ,
-        "productName"   : "Giầy Xanh Trắng",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 10000,
+        "productName"   : "Benetton Jogger",
+        "type"          : 5 ,   
+        "description"   : "Jogger",
+        "price"         : 120000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes4.png"
+        "PrdImage"      : "images/product-3.png"
     },
     {
         "_id"           : 5 ,
-        "productName"   : "Giầy Xám",
+        "productName"   : "Puma Crimson T-shirt",
         "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 215000,
+        "description"   : "Shirt",
+        "price"         : 500000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes5.png"
+        "PrdImage"      : "images/product-1.png"
     },
     {
         "_id"           : 6 ,
-        "productName"   : "Giầy Cam",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 1250000,
+        "productName"   : "HRX Black Sneaker",
+        "type"          : 3 ,   
+        "description"   : "Shoes",
+        "price"         : 12500000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes6.png"
+        "PrdImage"      : "images/product-2.png"
     },
     {
         "_id"           : 7 ,
-        "productName"   : "Giầy Đỏ",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
+        "productName"   : "Nike Jogger",
+        "type"          : 5 ,   
+        "description"   : "Jogger",
         "price"         : 625000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes7.png"
+        "PrdImage"      : "images/product-12.png"
     },
     {
         "_id"           : 8 ,
-        "productName"   : "Giầy Đen Xanh",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 125000,
+        "productName"   : "Roadster Watch",
+        "type"          : 2 ,   
+        "description"   : "Watch",
+        "price"         : 30000000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes8.png"
+        "PrdImage"      : "images/product-9.png"
     },
     {
         "_id"           : 9 ,
-        "productName"   : "Giầy Thể Thao",
-        "type"          : 1 ,   
-        "description"   : "Đôi Giầy Màu Sang Trọng",
-        "price"         : 325000,
+        "productName"   : "HRX White Sneaker",
+        "type"          : 3 ,   
+        "description"   : "Shoes",
+        "price"         : 6350000,
         "quantity"      : 500 ,
-        "PrdImage"      : "image/shoes.png"
+        "PrdImage"      : "images/product-5.png"
     },
 ]
 const TypeProductInput = 
 [
     {
         "_id" : 1 ,
-        "Name" : "Giầy" 
+        "Name" : "T-Shirt" 
     },
     {
         "_id" : 2 ,
-        "Name" : "Trái Cây" 
+        "Name" : "Watch" 
     },
     {
         "_id" : 3 ,
-        "Name" : "Something" 
-    }
+        "Name" : "Shoes" 
+    },
+    {
+        "_id" : 4 ,
+        "Name" : "Socks" 
+    },
+    {
+        "_id" : 5 ,
+        "Name" : "Jogger" 
+    },
+    {
+        "_id" : 6 ,
+        "Name" : "Short" 
+        },
+    {
+        "_id" : 7 ,
+        "Name" : "Shirt" 
+    },
 ]
 const hoadonInput = 
 [
-    {
+   {
         "_id"               : 1 ,
-        "createDate"        : "2020-10-10",
-        "deliveryDate"      : "2023-15-11",
+        "createDate"        : "2023-10-10",
+        "deliveryDate"      : -1,
         "status"            : 1,
-        "UID"               : 1,
-        "SID"               : 2
+        "UID"               : 3,
+        "SID"               : -1 ,
+        "value"             : 40000 ,
+    },
+    {
+        "_id"               : 2 ,
+        "createDate"        : "2023-11-21" ,
+        "deliveryDate"      : -1,
+        "status"            : 1,
+        "UID"               : 3,
+        "SID"               : -1 ,
+        "value"             : 25725000 ,
     }
 ]
-//  Các Trạng Thái Ứng với Các Số 
-//  Đã Huỷ          -> 0
-//  Đã Đặt Hàng     -> 1
-//  Đã Xác Nhận     -> 2
-//  Đang Giao Hàng  -> 3
-//  Đã Thanh Toán   -> 4
+
+//  Huỷ          -> 0
+//  Đặt Hàng     -> 1
+//  Xác Nhận     -> 2
+//  Giao Hàng    -> 3
+//  Thanh Toán   -> 4
 const chitietInput = 
 [
     {
         "_id"           : 1,
         "billNumber"    : 1,
-        "prdId"         : [1 , 2 ],
-        "quantity"      : [1 , 3 ],
+        "prdId": [
+            {
+                "_id"           : 7 ,
+                "productName"   : "Nike Jogger",
+                "type"          : 5 ,   
+                "description"   : "Jogger",
+                "price"         : 625000,
+                "quantity"      : 500 ,
+                "PrdImage"      : "images/product-12.png"
+            },
+        ],
+        "quantity"      : [1],
+    },
+    {
+        "_id" : 2 ,
+        "billNumber": 2,
+        "prId": [
+            {
+                "_id"           : 8 ,
+                "productName"   : "Roadster Watch",
+                "type"          : 2 ,   
+                "description"   : "Watch",
+                "price"         : 30000000,
+                "quantity"      : 500 ,
+                "PrdImage"      : "images/product-9.png"
+            },
+            {
+                "_id"           : 9 ,
+                "productName"   : "HRX White Sneaker",
+                "type"          : 3 ,   
+                "description"   : "Shoes",
+                "price"         : 6350000,
+                "quantity"      : 500 ,
+                "PrdImage"      : "images/product-5.png"
+            },
+        ],
+        "quantity" : [1, 3],
     }
 ]
 const giohangInput = 
@@ -271,8 +332,24 @@ const giohangInput =
     {
         "_id"       : 1 ,
         "UID"       : 3 ,
-        "prdId"     :[1,1] ,
-        "quantity"  :[1,3] ,
+        "prdId": [
+            {
+                "_id"           : 1 ,
+                "productName"   : "Puma Purple T-shirt",
+                "type"          : 1 ,   
+                "description"   : "Shirt",
+                "price"         : 500000,
+                "quantity"      : 500 ,
+                "PrdImage"      : "images/product-4.png"
+            },
+        ] ,
+        "quantity"  :[1] ,
+    },
+    {
+        "_id"       : 2 ,
+        "UID"       : 4 ,
+        "prdId"     : [] ,
+        "quantity"  : [] ,   
     }
 ]
 //Next Number
@@ -281,7 +358,7 @@ const BangTruyVan =
     {
         "_id"           : 0 ,
         "account"       : 8 ,
-        "sanpham"       : 2 ,
+        "sanpham"       : 10 ,
         "hoadon"        : 1 ,
         "chitiet"       : 2 ,
         "giohang"       : 2 ,
