@@ -3,7 +3,10 @@
     <div class="login-form">
       <form>
         <div class="text-center m-3">
-          <h2 class="login-title login-form-title">Login Form<hr></h2>
+          <h2 class="login-title login-form-title">
+            Login Form
+            <hr />
+          </h2>
         </div>
 
         <!-- Username input -->
@@ -74,12 +77,12 @@ async function Login() {
 
   if (!result.value.isAvailable) {
     inputData.value.username = "";
-    return alert("Không Tìm Thấy Tài Khoản Đăng Nhập ");
+    return alert("Cannot find account information ");
   }
 
   if (!result.value.isTruePassword) {
     inputData.value.password = "";
-    return alert("Nhập Sai Mật Khẩu Vui Lòng Nhập Lại");
+    return alert("Password is incorrect.");
   }
 
   const roleTable = {
